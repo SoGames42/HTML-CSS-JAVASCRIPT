@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Stardew Valley Festivals</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="Image/Calendar_Flag_Anim.png">
+    </head>
+    <body>
+        <!--Titre Image-->
+        <header>
+            <div class="logoPrincipal">
+                <img src="Image/Main_Logo.png" alt="titre" class="logo">
+            </div>
+            <div class="burger-menu" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+            </div>
+            <ul class="burgernavigation">
+                <li>
+                    <div class="darkModeDivision">
+                        <input type="checkbox" id="darkmodebouton">
+                        <p>Dark Mode</p>
+                    </div>
+                </li>
+                <li><a href="#formulaire">Cliquez ici pour acceder au formulaire</a></li>
+                <li><a href="#nousretrouver">Cliquez ici pour jouer au jeu</a></li>
+            </ul>
+            
+        </header>
+        <!--9 images-->    
+        <main>
+            <!--1ere ligne-->   
+            <div class="fond">
+                <a href="fete_des_oeufs.html" class="fete_des_oeufs"></a>
+            </div>
+            <div class="fond">
+                <a href="danse_des_fleurs.html" class="danse_des_fleurs"></a>
+            </div>
+            <div class="fond">
+                <a href="fete_hawaienne.html" class="fete_hawaienne"></a>
+            </div>
+            <!--2eme ligne-->   
+            <div class="fond">
+                <a href="" class="danse_des_meduses"></a>
+            </div>
+            <div class="fond">
+                <a href="" class="grand_festival"></a>
+            </div>
+            <div class="fond">
+                <a href="" class="fete_des_esprits"></a>
+            </div>
+            <!--3eme ligne-->   
+            <div class="fond">
+                <a href="" class="festival_des_glaces"></a>
+            </div>
+            <div class="fond">
+                <a href="" class="marche_nocturne"></a>
+            </div>
+            <div class="fond">
+                <a href="" class="fete_de_letoile"></a>    
+            </div>
+
+            <swiper-container class="mySwiper" navigation="true">
+                <swiper-slide><img src="Image/Festivals/printemps/paques.png"></img></swiper-slide>
+                <swiper-slide><img src="Image/Festivals/printemps/Dance.jpg"></img></swiper-slide>
+                <swiper-slide><img src="Image/Festivals/été/soupe.webp"></img></swiper-slide>
+                <swiper-slide><img src="Image/Festivals/été/dance des meduse.webp"></img></swiper-slide>
+                <swiper-slide><img src="Image/Festivals/automne/grand festival.png"></img></swiper-slide>
+                <swiper-slide><img src="Image/Festivals/automne/halloween.png"></img></swiper-slide>
+                <swiper-slide><img src="Image/Festivals/hiver/peche.png"></img></swiper-slide>
+                <swiper-slide><img src="Image/Festivals/hiver/Night_Market.png"></img></swiper-slide>
+                <swiper-slide><img src="Image/Festivals/hiver/Noel.jpg"></img></swiper-slide>
+            </swiper-container>
+    
+            <form id="formulaire">
+                <fieldset>
+                    <legend>Informations personnelles</legend>
+                    <label for="nom">Nom </label>
+                    <input type="text" id="nom" name="nom" required>
+                    <label for="mail">Mail: </label>
+                    <input type="email" id="mail" name="mail" required>
+                    <label for="mdp">Mot de passe: </label>
+                    <input type="mdp" id="mdp" name="mdp" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Votre saison preferee</legend>
+                    <input type="radio" id="printemps" name="saison" value="printemps">
+                    <label for="printemps">Printemps</label>
+                    <input type="radio" id="ete" name="saison" value="ete">
+                    <label for="ete">Ete</label>
+                    <input type="radio" id="automne" name="saison" value="automne">
+                    <label for="automne">Automne</label>
+                    <input type="radio" id="hiver" name="saison" value="hiver">
+                    <label for="hiver">Hiver</label>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Vos évènements preferes</legend>
+                    <input type="checkbox" id="paques" name="evenement" value="paques">
+                    <label for="paques">Paques</label>
+                    <input type="checkbox" id="danseDesFleurs" name="evenement" value="danseDesFleurs">
+                    <label for="danseDesFleurs">Danse des fleurs</label>
+                    <input type="checkbox" id="soupe" name="evenement" value="soupe">
+                    <label for="soupe">Soupe</label>
+                    <input type="checkbox" id="danseDesMeduses" name="evenement" value="danseDesMeduses">
+                    <label for="danseDesMeduses">Danse des meduses</label>
+                    <input type="checkbox" id="grandFestival" name="evenement" value="grandFestival">
+                    <label for="grandFestival">Grand festival</label>
+                    <input type="checkbox" id="halloween" name="evenement" value="halloween">
+                    <label for="halloween">Halloween</label>
+                    <input type="checkbox" id="peche" name="evenement" value="peche">
+                    <label for="peche">Pêche d'hiver</label>
+                    <input type="checkbox" id="NightMarket" name="evenement" value="NightMarket">
+                    <label for="NightMarket">Night Market</label>
+                    <input type="checkbox" id="noel" name="evenement" value="noel">
+                    <label for="noel">Noel</label>
+                </fieldset>
+            
+                <!-- Input de type submit pour le bouton de soumission -->
+                <input type="button" value="Envoyer" id="envoyer">
+            </form>
+              <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+        </main>
+        <footer>
+            <p>
+                Ou retrouver le jeu ?
+            </p>
+            <div class="img" id="nousretrouver">
+                <a href="https://store.steampowered.com/app/413150/Stardew_Valley/">
+                <img src="Image/logo/STEAM_logo.png" alt="STEAM_logo">
+                </a>
+                <a href="https://www.playstation.com/en-us/games/stardew-valley/">
+                <img src="Image/logo/PS4_logo.png" alt="PS4_logo">
+                </a>          
+                <a href="https://www.nintendo.com/us/store/products/stardew-valley-switch/">
+                <img src="Image/logo/NintendoSwitch_logo.png" alt="NintendoSwitch_logo">
+                </a>
+                <a href="https://www.xbox.com/en-gb/games/store/stardew-valley/c3d891z6tnqm">
+                <img src="Image/logo/XBOXOne_logo.png" alt="XBOXOne_logo">
+                </a>
+            </div>
+        </footer>
+        <script src="js/script.js"></script>
+    </body>
+</html>

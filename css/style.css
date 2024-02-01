@@ -1,0 +1,177 @@
+body{
+    background: url(../Image/Vfrond.jpg) no-repeat fixed center center / cover;
+    overflow-x: hidden;
+    width: 100vw;
+}
+@font-face {
+	font-family: 'stardew';
+	src: url(../Police/StardewValleyRegular.ttf)
+}
+@font-face {
+	font-family: 'pixel';
+	src: url(../Police/stardew-valley.ttf)
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: fit-content;
+    width: 100%;
+}
+div.fond > a{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 90%;
+    height: 90%;
+    transition: 0.3s;
+    outline-color:#e0a100;
+    outline-width: 10px;
+    outline-style:solid;
+    
+}
+div.fond > a:hover{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 95%;
+    height: 95%;
+    transition: 0.3s;
+    outline-color:#e0a100;
+    outline-style:solid;
+}
+footer{
+    padding: 2% 0% 2% 0%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(215, 241, 251,50%);
+}
+p, input, label, legend, li > a{
+    font-family: 'pixel';
+    font-size: 200%;
+    font-weight: bold;
+    margin-left: 2%;
+    color: black;
+}
+.bar{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+}
+.img{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    object-fit: fill;
+}
+.fond{
+    height: 28vh;
+    width: 28%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 1%;
+}
+.mySwiper{
+    display: block;
+}
+.darkModeDivision{
+    display: flex;
+    height: fit-content;
+    align-items: baseline;
+    width: 50%;
+}
+.logoPrincipal{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 10vh;
+    margin-bottom: 10vh;
+}
+.burgernavigation {
+    list-style-type: none;
+    display: none;
+    flex-direction: column;
+    justify-content: start;
+    margin: 0;
+    padding: 0;
+}
+.burgernavigation.show {
+    display: flex;
+}
+swiper-container{
+    width: 90vw;
+    height: 90vh;
+}
+swiper-slide{
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+swiper-slide img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*Images liens*/
+.fete_des_oeufs{   
+    background-image:url(../Image/Festivals/printemps/paques.png);
+}
+.danse_des_fleurs{   
+    background-image:url(../Image/Festivals/printemps/Dance.jpg);
+}
+
+.fete_hawaienne{   
+    background-image:url(../Image/Festivals/été/soupe.webp);
+}
+.danse_des_meduses{   
+    background-image:url(../Image/Festivals/été/dance\ des\ meduse.webp);
+}
+
+.grand_festival{   
+    background-image:url(../Image/Festivals/automne/grand\ festival.png);
+}
+.fete_des_esprits{   
+    background-image:url(../Image/Festivals/automne/halloween.png);
+}
+
+.festival_des_glaces{   
+    background-image:url(../Image/Festivals/hiver/peche.png);
+}
+.marche_nocturne{   
+    background-image:url(../Image/Festivals/hiver/Night_Market.png);
+}
+.fete_de_letoile{   
+    background-image:url(../Image/Festivals/hiver/Noel.jpg);
+}
+@media screen and (max-width: 720px){
+    div.fond{
+        height: 30vh;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        padding: 10px;
+        transition: 0.3s;
+    }
+    div.fond:hover{
+        height: 30vh;
+        width: 81%;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+}
